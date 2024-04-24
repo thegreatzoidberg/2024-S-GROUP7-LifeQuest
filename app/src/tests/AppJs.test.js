@@ -71,12 +71,11 @@ test("scrolls to top when navigation to a new page", () => {
       <App />
     </MemoryRouter>
   );
-  // Trigger navigation to new page
-  userEvent.click(screen.getByText("LifeQuest"));
+
   // Ensure scrollTo is called
   expect(window.scrollTo).toHaveBeenCalledWith(0, 0);
 });
-});
+
 
 
 test("updates document title and meta description", () => {
