@@ -72,6 +72,9 @@ test("scrolls to top when navigation to a new page", () => {
     </MemoryRouter>
     );
 
+
+  // Simulate a scroll event on the window
+  window.dispatchEvent(new Event("scroll"));
   // Ensure scrollTo is called
   expect(window.scrollTo).toHaveBeenCalledWith(0, 0);
   });
