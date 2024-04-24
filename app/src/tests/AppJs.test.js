@@ -70,11 +70,11 @@ test("scrolls to top when navigation to a new page", () => {
     <MemoryRouter initialEntries = {["/login"]}>
       <App />
     </MemoryRouter>
-  );
+    );
 
   // Ensure scrollTo is called
   expect(window.scrollTo).toHaveBeenCalledWith(0, 0);
-});
+  });
 
 
 
@@ -83,8 +83,8 @@ test("updates document title and meta description", () => {
     <MemoryRouter initialEntries = {["/"]}>
       <App />
     </MemoryRouter>
-  );  
+    );  
 // expect calls go here if needed
 
+  });
 });
-
