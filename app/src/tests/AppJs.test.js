@@ -72,7 +72,7 @@ test("scrolls to top when navigation to a new page", () => {
     </MemoryRouter>
   );
   // Trigger navigation to new page
-  userEvent.click(screen.getByText("LifeQuest");
+  userEvent.click(screen.getByText("LifeQuest"));
   // Ensure scrollTo is called
   expect(window.scrollTo).toHaveBeenCalledWith(0, 0);
 });
