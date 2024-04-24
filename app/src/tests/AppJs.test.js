@@ -81,7 +81,7 @@ test("updates document title and meta description", () => {
     <MemoryRouter initialEntries = {["/"]}>
       <App />
     </MemoryRouter>
-});  
+  );  
 // expect calls go here if needed
 
 });
